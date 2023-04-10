@@ -29,7 +29,7 @@ for player in ivalues(PlayerNumber) do
 	-- Add ITL EX scores to the song wheel as well.
 	-- It will be centered to the item if only one player is enabled, and stacked otherwise.
 	af[#af+1] = Def.BitmapText{
-		Font="Wendy/_wendy small",
+		Font="Futura/_futura hv bt 48px",
 		Text="",
 		InitCommand=function(self)
 			self:visible(false)
@@ -89,7 +89,7 @@ for player in ivalues(PlayerNumber) do
 	}
 	-- Song Rank
 	af[#af+1] = Def.BitmapText{
-		Font="Wendy/_wendy small",
+		Font="Futura/_futura hv bt 48px",
 		Text="",
 		InitCommand=function(self)
 			self:visible(false)			
