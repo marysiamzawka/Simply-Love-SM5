@@ -28,6 +28,33 @@ function GetHexColor( n, decorative )
 	return Color.White
 end
 
+function GetHexDiffiColor( n, decorative )
+	-- if we were passed nil or a non-number, return white
+	if n == nil or type(n) ~= "number" then return Color.White end
+
+	local style = ThemePrefs.Get("VisualStyle")
+	local colorTable = SL.DiffiColors
+	if decorative then
+		colorTable = SL.DecorativeColors
+	end
+	if style == "SRPG6" then
+		colorTable = SL.SRPG6.Colors
+	end
+
+	-- use the number passed in to lookup a color in the corresponding color table
+	-- ensure the index is kept in bounds via modulo operation
+	local clr = ((n - 1) % #colorTable) + 1
+	if colorTable[clr] then
+		local c = color(colorTable[clr])
+		if style == "SRPG6" and not decorative then
+			c = LightenColor(c)
+		end
+		return c
+	end
+
+	return Color.White
+end
+
 -- convenience function to return the current color from SL.Colors
 function GetCurrentColor( decorative )
 	return GetHexColor( SL.Global.ActiveColorIndex, decorative )
@@ -45,8 +72,8 @@ function DifficultyColor( difficulty, decorative )
 	-- use the reverse lookup functionality available to all SM enums
 	-- to map a difficulty string to a number
 	-- SM's enums are 0 indexed, so Beginner is 0, Challenge is 4, and Edit is 5
-	local clr = SL.Global.ActiveColorIndex + (Difficulty:Reverse()[difficulty] - 4)
-	return GetHexColor(clr, decorative)
+	local clr = Difficulty:Reverse()[difficulty] - 4
+	return GetHexDiffiColor(clr, decorative)
 end
 
 function LightenColor(c)

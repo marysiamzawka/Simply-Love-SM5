@@ -182,6 +182,13 @@ SL = {
 		"#FFBE00",
 		"#FF7D00",
 	},
+	DiffiColors = {
+		"#a355b8", --beginner
+		"#1ec51d", --easy
+		"#d6db41", --medium
+		"#ba3049",
+		"#2691c5",
+	},
 	-- These are the original SL colors. They're used for decorative (non-text) elements, like the background hearts:
 	DecorativeColors = {
 		"#FF3C23",
