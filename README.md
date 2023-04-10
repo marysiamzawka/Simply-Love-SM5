@@ -2,7 +2,9 @@
 
 A fork of Simply Love with some extra features that (attempt to) enhance quality of life while playing.
 
-Only for itgmania. Please use the Default branch itgmania:release
+Smol edits by Mr. Mary. Can't promise being up-to-date with upstream.
+
+Only for itgmania.
 
 ## List of features that are available in this fork:
 
@@ -50,13 +52,25 @@ Only for itgmania. Please use the Default branch itgmania:release
   * Column Cue countdown
   * Stream breakdown on results screen
 
+## Changes exclusive to this fork
+
+  * Most fonts swapped for Futura
+  * GrooveStats swapped for [BoogieStats](https://github.com/florczakraf/boogie-stats/)
+  * You can now search for artists in addition to titles in the Song Search panel
+  * All visual styles now use the same background music from ITG3 or some other theme
+  * All colors now use ITG2 difficulty colors
+
 And more!
 
 # Credits
 
-This fork is worked on by Zarzob and Zankoku.
+The original fork is worked on by Zankoku and Zarzob.
 
-Contact us on Discord at `Zarzob#0001` or `Zankoku#4444`. Alternatively you can join my [discord server](https://discord.gg/zarzob)
+Contact them on Discord at `Zarzob#0001` or `Zankoku#4444`. Alternatively you can join their [discord server](https://discord.gg/zarzob)
+
+This fork is maintained by Mr. Mary.
+
+You can contact me at `Mr. Mary#1679` on Discord.
 
 # Additional Contributors
 
