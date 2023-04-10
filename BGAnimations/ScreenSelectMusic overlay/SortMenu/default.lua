@@ -105,7 +105,9 @@ local SongSearchSettings = {
 		if songName then
 			FilterTable(candidates, function(song)
 				return (song:GetDisplayFullTitle():lower():find(songName) ~= nil or
-						song:GetTranslitFullTitle():lower():find(songName) ~= nil)
+				song:GetTranslitFullTitle():lower():find(songName) ~= nil or
+				song:GetDisplayArtist():lower():find(songName) ~= nil or
+				song:GetTranslitArtist():lower():find(songName) ~= nil)
 			end)
 		end
 
