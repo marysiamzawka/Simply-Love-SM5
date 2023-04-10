@@ -6,7 +6,7 @@ GrooveStatsURL = function()
 	local dir = THEME:GetCurrentThemeDirectory() .. "Other/"
 	local uat = dir .. "GrooveStats_UAT.txt"
 	if not FILEMAN:DoesFileExist(uat) then 
-		url_prefix = "https://api.groovestats.com/" 
+		url_prefix = "https://boogiestats.andr.host/" 
 	else
 		url_prefix = "http://127.0.0.1:5000/"
 	end
