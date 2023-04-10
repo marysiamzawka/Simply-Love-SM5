@@ -16,7 +16,7 @@ local af = Def.ActorFrame{
 		end
 	end },
 	Def.Quad{ InitCommand=function(self) 
-		self:horizalign(left):diffuse(color("#4c565d")):zoomto(item_width, _screen.h/num_visible_items - 1)
+		self:horizalign(left):diffuse(color("#283239")):zoomto(item_width, _screen.h/num_visible_items - 1)
 		if ThemePrefs.Get("VisualStyle") == "Technique" then
 			self:diffusealpha(0.5)
 		end
