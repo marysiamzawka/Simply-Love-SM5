@@ -52,6 +52,8 @@ Only for itgmania.
   * Column Cue countdown
   * Stream breakdown on results screen
 
+  And more!
+
 ## Changes exclusive to this fork
 
   * Most fonts swapped for Futura
@@ -60,7 +62,6 @@ Only for itgmania.
   * All visual styles now use the same background music from ITG3 or some other theme
   * All colors now use ITG2 difficulty colors
 
-And more!
 
 # Credits
 
