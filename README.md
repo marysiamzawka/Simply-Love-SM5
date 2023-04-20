@@ -57,6 +57,7 @@ Only for itgmania.
 ## Changes exclusive to this fork
 
   * Most fonts swapped for Futura
+    * For unaffected strings you can still use Zmod's ability to pick between Wendy and Mega fonts
   * GrooveStats swapped for [BoogieStats](https://github.com/florczakraf/boogie-stats/)
   * You can now search for artists in addition to titles in the Song Search panel
   * All visual styles now use the same background music from ITG3 or some other theme
