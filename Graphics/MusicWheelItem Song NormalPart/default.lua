@@ -89,7 +89,11 @@ for player in ivalues(PlayerNumber) do
 	}
 	-- Song Rank
 	af[#af+1] = Def.BitmapText{
+<<<<<<< HEAD
 		Font="Futura/_futura hv bt 48px",
+=======
+		Font=ThemePrefs.Get("ThemeFont") == "Common" and "Wendy/_wendy small" or "Mega/_mega font",
+>>>>>>> upstream/itgmania-release
 		Text="",
 		InitCommand=function(self)
 			self:visible(false)			
